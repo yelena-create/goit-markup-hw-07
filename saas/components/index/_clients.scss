@@ -1,0 +1,32 @@
+.client {
+  padding: 94px 0;
+}
+.client-list {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.client .button-lite {
+  display: block;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border (--time) var(--cubic);
+}
+.button-lite:hover .button-icons,
+.button-lite:focus .button-icons {
+  fill: var(--accent-color);
+}
+.client-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.client .button-icons {
+  fill: #afb1b8;
+  transition: fill var(--time) var(--cubic);
+}
+.client .button-lite:hover,
+.client .button-lite:focus {
+  border: 1px solid var(--accent-color);
+  background-color: var(--background-color);
+}

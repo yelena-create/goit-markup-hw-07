@@ -1,0 +1,38 @@
+.features {
+  padding-top: 94px;
+}
+.features .container {
+  padding: 0 15px;
+}
+.features-item {
+  display: flex;
+}
+.features li {
+  width: 270px;
+}
+
+.column:not(:last-child) {
+  margin-right: 30px;
+}
+.post-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.features-item .button-lite {
+  padding: 25px 100px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features .text {
+  font-size: 14px;
+  line-height: 1.714;
+}
+.features .title {
+  display: none;
+}
