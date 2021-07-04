@@ -1,14 +1,22 @@
-.features-item {
+.features__title {
+  display: none;
+}
+.features__item {
   display: flex;
 }
-.features li {
+.features__column {
   width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-
-.column:not(:last-child) {
-  margin-right: 30px;
+.features__icons {
+  padding: 25px 100px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
-.post-title {
+.features__post-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
@@ -16,17 +24,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.features-item .button-lite {
-  padding: 25px 100px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.features .text {
+.features__text {
   font-size: 14px;
   line-height: 1.714;
-}
-.features .title {
-  display: none;
 }
