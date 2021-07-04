@@ -44,6 +44,17 @@ h3 {
 
 section {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+section.features {
+  padding-bottom: 0;
+}
+
+li,
+a,
+img {
+  display: block;
 }
 
 .container__header {
@@ -451,6 +462,10 @@ section {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+secion.features {
+  margin: 0;
+}
+
 .features__title {
   display: none;
 }
@@ -490,27 +505,23 @@ section {
   line-height: 1.714;
 }
 
-.business {
-  padding: 94px 0;
-}
-
-.image-list {
+.business__image-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.image-list :not(:last-child) {
+.business__image-list :not(:last-child) {
   margin-right: 30px;
 }
 
-.image-box {
+.business__image-box {
   display: block;
   position: relative;
   overflow: hidden;
 }
 
-.text-box {
+.business__text-box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -528,49 +539,52 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #f5f4fa;
-  padding-bottom: 94px;
 }
 
-.team-card {
+.team-card__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.team-card > .card:not(:last-child) {
+.team-card__list .team-card__card:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-card-text {
+.team-card__card {
+  border-bottom: 1px solid;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.team-card__wrapper {
   margin: auto;
   padding: 30px 0;
   background-color: #ffffff;
 }
 
-.button-social {
-  width: 44px;
-  height: 44px;
-  margin: 0;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.team-card__wrapper.title-name {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.button-social:hover,
-.button-social:focus {
-  background-color: #2196f3;
-  border-radius: 50%;
-}
-
-.button-social:hover .button-icons,
-.button-social:focus .button-icons {
-  fill: #ffffff;
+.team-card__wrapper.text {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .team-social {
   margin-top: 16px;
 }
 
-.team-social-item {
+.team-social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,42 +599,37 @@ section {
   background-color: #ffffff;
 }
 
-.team-social-item .button-social,
-.footer-social-item .button-social {
-  text-align: center;
-  padding: 12px;
-  margin: 0 12px 0 0;
-  border-radius: 50%;
-  /* border: none; */
-}
-
-.team-social-item .button-icons,
-.team-social-item .button-icons {
+.team-social__list .button-icons,
+.team-social__list .button-icons {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card {
-  border-bottom: 1px solid;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+.button-social {
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-social:hover, .button-social:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+.button-social:hover .button-icons,
+.button-social:focus .button-icons {
+  fill: #ffffff;
+}
+
+.team-social__item .button-social,
+.footer-social__item .button-social {
   text-align: center;
-}
-
-.team .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-li,
-a {
-  display: block;
+  padding: 12px;
+  margin: 0 12px 0 0;
+  border-radius: 50%;
 }
 
 .client-list {
@@ -823,7 +832,7 @@ a {
   color: #ffffff;
 }
 
-section {
+.section__portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }

@@ -1,4 +1,14 @@
 
 section{
     padding-top: 94px;
+    padding-bottom: 94px;
+}
+section.features{
+        padding-bottom: 0;
+
+}
+li,
+a,
+img {
+  display: block;
 }

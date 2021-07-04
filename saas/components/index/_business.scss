@@ -1,18 +1,16 @@
-.business {
-  padding: 94px 0;
-}
-.image-list {
+
+.business__image-list {
   display: flex;
 }
-.image-list :not(:last-child) {
+.business__image-list :not(:last-child) {
   margin-right: 30px;
 }
-.image-box {
+.business__image-box {
   display: block;
   position: relative;
   overflow: hidden;
 }
-.text-box {
+.business__text-box {
   position: absolute;
   bottom: 0;
   left: 0;
