@@ -1,5 +1,5 @@
 .footer {
-  color: var(--background-color);
+  color: $background-color;
   background-color: #2f303a;
 }
 .footer .container {
@@ -11,9 +11,7 @@
   margin-right: 70px;
 }
 .footer a {
-  color: var(--background-color);
-}
-.footer address {
+  color: $background-color;
   display: block;
   font-size: 14px;
   line-height: 1.71;
@@ -58,17 +56,17 @@
 .footer-social-item .button-social {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: background-color var(--time) var(--cubic);
+  transition: background-color $time $cubic;
 }
 .footer-social-item .button-social:not(:last-child) {
   margin-right: 10px;
 }
 .footer-social-item .button-icons {
-  fill: #ffffff;
+  fill: $background-color;
 }
 .footer-social-item a:hover,
 .footer-social-item a:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .footer-form {
@@ -86,7 +84,7 @@
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  color: var(--background-color);
+  color: $background-color;
   text-align: left;
 }
 .footer-form .submit::before {
@@ -103,7 +101,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--background-color);
+  color: $background-color;
   margin: 0;
   padding: 0;
 }
@@ -116,5 +114,5 @@
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  color: var(--background-color);
+  color: $background-color;
 }

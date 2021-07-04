@@ -10,8 +10,8 @@ header {
   justify-content: space-between;
 }
 .logo-text {
-  color: var(--menu-color);
-  font-family: var(--accent-font);
+  color: $menu-color;
+  font-family: $accent-font;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -21,22 +21,22 @@ header {
 }
 
 .logo-text-color {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .nav .link {
-  color: var(--menu-color);
+  color: $menu-color;
   font-weight: 500;
   text-decoration: none;
-  transition: color var(--time) var(--cubic);
+  transition: color $time $cubic;
 }
 .link:hover .button-icon,
 .link:focus .button-icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .nav-link {
@@ -58,25 +58,25 @@ header {
 .contacts .link {
   margin: 0;
   border: 0;
-  color: var(--main-text-color);
+  color: $main-text-color;
   align-items: flex-end;
-  transition: color var(--time) var(--cubic);
+  transition: color $time $cubic;
 }
 
 .contacts .link:hover,
 .contacts .link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .button-icon {
   margin-right: 10px;
-  fill: var(--main-text-color);
-  transition: fill var(--time) var(--cubic);
+  fill: $main-text-color;
+  transition: fill $time $cubic;
 }
 .link.phone {
   margin-left: 50px;
 }
 .link.current {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .link.current::after {
   position: absolute;
@@ -86,6 +86,6 @@ header {
   content: '';
   height: 4px;
   width: 100%;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border-radius: 2px;
 }

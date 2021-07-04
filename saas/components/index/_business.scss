@@ -1,9 +1,6 @@
 .business {
   padding: 94px 0;
 }
-.business .container {
-  padding: 0 15px;
-}
 .image-list {
   display: flex;
 }
@@ -25,5 +22,5 @@
   text-align: center;
   padding: 27px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $background-color;
 }

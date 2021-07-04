@@ -1,6 +1,6 @@
 body {
-  background-color: var(--background-color);
-  color: #212121;
+  background-color: $background-color;
+  color: $menu-color;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -14,4 +14,5 @@ h3 {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }

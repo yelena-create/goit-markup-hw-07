@@ -1,9 +1,7 @@
 .team {
   justify-content: space-between;
   background-color: #f5f4fa;
-}
-.team .container {
-  padding: 94px 15px;
+  padding-bottom: 94px;
 }
 .team-card {
   display: flex;
@@ -14,22 +12,22 @@
 .team-card-text {
   margin: auto;
   padding: 30px 0;
-  background-color: var(--background-color);
+  background-color: $background-color;
 }
 .button-social {
   width: 44px;
   height: 44px;
   margin: 0;
-  transition: background-color var(--time) var(--cubic);
+  transition: background-color $time $cubic;
 }
 .button-social:hover,
 .button-social:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border-radius: 50%;
 }
 .button-social:hover .button-icons,
 .button-social:focus .button-icons {
-  fill: var(--background-color);
+  fill: $background-color;
 }
 .team-social {
   margin-top: 16px;
@@ -39,7 +37,7 @@
   flex-direction: row;
   justify-content: center;
   fill: #afb1b8;
-  background-color: var(--background-color);
+  background-color: $background-color;
 }
 
 .team-social-item .button-social,
@@ -53,7 +51,7 @@
 .team-social-item .button-icons,
 .team-social-item .button-icons {
   fill: #afb1b8;
-  transition: fill var(--time) var(--cubic);
+  transition: fill $time $cubic;
 }
 
 .card {

@@ -6,7 +6,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--time) var(--cubic);
+  transition: opacity $time $cubic;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -22,10 +22,10 @@
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background-color: var(--background-color);
+  background-color: $background-color;
   /* padding: 8px; */
-  transition: transform var(--time) var(--cubic);
-  color: var(--main-text-color);
+  transition: transform $time $cubic;
+  color: $main-text-color;
   /* z-index: 999; */
 }
 .modal .send {
@@ -35,14 +35,14 @@
   width: 30px;
   height: 30px;
   transform: translate(-8px, +8px);
-  color: #212121;
-  background-color: var(--background-color);
+  color: $menu-color;
+  background-color: $background-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: transform var(--time) var(--cubic), color var(--time) var(--cubic);
+  transition: transform $time $cubic, color $time $cubic;
 }
 .modal .send:hover {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .form {
   width: 528px;
@@ -61,7 +61,7 @@ p.form-title {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
-  color: #212121;
+  color: $menu-color;
   margin-bottom: 20px;
 }
 .field {
@@ -83,7 +83,7 @@ p.form-title {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: $main-text-color;
   text-align: left;
 }
 .label-comment {
@@ -108,18 +108,18 @@ p.form-title {
   content: '';
   width: 15px;
   height: 15px;
-  fill: #212121;
+  fill: $menu-color;
   display: inline-block;
   background-repeat: no-repeat;
-  transition: fill var(--time) var(--cubic);
+  transition: fill $time $cubic;
 }
 .field:focus-within > .icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 .input:focus,
 .field:focus-within > .comment,
 .field:focus-within > .input {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
   outline: none;
 }
 textarea {
@@ -172,8 +172,8 @@ input[type='checkbox'] {
   border-radius: 4px;
 }
 .checkbox:checked + .icon-check {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: $accent-color;
+  border-color: $accent-color;
   background-origin: border-box;
   background-image: url(../image/icons/icon-check.svg);
 }
@@ -183,8 +183,8 @@ button.submit {
   background-color: #2196f3;
   border-radius: 4px;
   text-align: center;
-  color: #ffffff;
-  transition: fill 250ms var(--cubic);
+  color: $background-color;
+  transition: fill 250ms $cubic;
   transform: scale(1);
 }
 button.submit:focus {

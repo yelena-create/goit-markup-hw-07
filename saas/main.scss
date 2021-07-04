@@ -1,8 +1,8 @@
-@import './variables/color';
-@import './variables/fonts';
-@import './variables/secondary';
+@import './utils/variables';
 @import './base/nullnormalize';
-@import './layouts/main';
+@import './layouts/body';
+@import'./pages/index';
+@import'./pages/portfolio';
 @import './layouts/page-header';
 @import './components/index/hero';
 @import './components/index/hero-modal';
