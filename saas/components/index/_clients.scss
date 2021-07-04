@@ -1,30 +1,29 @@
-.client-list {
+.client__list {
   display: flex;
   /* justify-content: center; */
   /* align-items: center; */
 }
 
-.client .button-lite {
+.client__icon{
   display: block;
   padding: 16px 32px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   transition: border $time $cubic;
+  &:hover .client__button-icons,
+  &:focus .client__button-icons {
+    fill: $accent-color;
+  }
+  &:hover,
+  &:focus {
+  border: 1px solid $accent-color;
 }
-.button-lite:hover .button-icons,
-.button-lite:focus .button-icons {
-  fill: $accent-color;
 }
-.client-list li:not(:last-child) {
+.client__item:not(:last-child) {
   margin-right: 30px;
 }
-.client .button-icons {
+.client__button-icons {
   fill: #afb1b8;
   transition: fill $time $cubic;
-}
-.client .button-lite:hover,
-.client .button-lite:focus {
-  border: 1px solid $accent-color;
-  background-color: $background-color;
 }
