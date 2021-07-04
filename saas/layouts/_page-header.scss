@@ -1,15 +1,13 @@
-header {
+
+.container__header {
   border-bottom: 1px solid #ececec;
-}
-.header {
   height: 80px;
   padding: 0 15px;
-}
-.header.container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.logo-text {
+.logo__text {
   color: $menu-color;
   font-family: $accent-font;
   font-style: normal;
@@ -20,65 +18,39 @@ header {
   margin-right: 93px;
 }
 
-.logo-text-color {
+.logo__text-color {
   color: $accent-color;
-}
+  }
 
-.nav .link {
-  color: $menu-color;
-  font-weight: 500;
-  text-decoration: none;
-  transition: color $time $cubic;
-}
-.link:hover .button-icon,
-.link:focus .button-icon {
-  fill: $accent-color;
-}
-.link:hover,
-.link:focus {
-  color: $accent-color;
-}
 
-.nav-link {
+.container__nav-link {
   display: flex;
   align-items: center;
 }
-.nav {
+.container__nav {
   display: flex;
   width: 294px;
   justify-content: space-between;
 }
-.nav-item {
+.container__nav-item {
   position: relative;
 }
-.contacts {
-  display: flex;
-  align-items: center;
-}
-.contacts .link {
-  margin: 0;
-  border: 0;
-  color: $main-text-color;
-  align-items: flex-end;
+.link {
+  color: $menu-color;
+  font-weight: 500;
+  text-decoration: none;
   transition: color $time $cubic;
-}
-
-.contacts .link:hover,
-.contacts .link:focus {
+  &:hover,
+  &:focus {
   color: $accent-color;
 }
-.button-icon {
-  margin-right: 10px;
-  fill: $main-text-color;
-  transition: fill $time $cubic;
+  &:hover .button-icon,
+  &:focus .button-icon {
+  fill: $accent-color;}
 }
-.link.phone {
-  margin-left: 50px;
-}
-.link.current {
+.link-current {
   color: $accent-color;
-}
-.link.current::after {
+  &::after {
   position: absolute;
   top: calc(100% + 29px);
   left: 0;
@@ -87,5 +59,30 @@ header {
   height: 4px;
   width: 100%;
   background-color: $accent-color;
-  border-radius: 2px;
+  border-radius: 2px;}
+  }
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  &__link {
+  margin: 0;
+  border: 0;
+  color: $main-text-color;
+  align-items: flex-end;
+  &:hover,
+  &:focus{
+  color: $accent-color;} 
+ }
+}
+
+.contacts__link-phone {
+  margin-left: 50px;
+}
+
+.button-icon {
+   margin-right: 10px;
+  fill: $main-text-color;
+  transition: fill $time $cubic;
 }
