@@ -87,11 +87,8 @@ section {
           justify-content: space-between;
 }
 
-.container__nav-item {
-  position: relative;
-}
-
 .link {
+  position: relative;
   color: #212121;
   font-weight: 500;
   text-decoration: none;

@@ -32,10 +32,8 @@
   width: 294px;
   justify-content: space-between;
 }
-.container__nav-item {
-  position: relative;
-}
 .link {
+  position: relative;
   color: $menu-color;
   font-weight: 500;
   text-decoration: none;
