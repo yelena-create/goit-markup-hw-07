@@ -5,7 +5,7 @@
   text-align: center;
   padding: 0 15px 0;
 }
-.overlay {
+.hero__overlay {
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -18,12 +18,12 @@
     url(../image/index/hero-dg.jpg);
 }
 
-.hero-container {
+.hero__container {
   display: inline-block;
   padding: 200px 0 200px;
 }
 
-.hero .title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -34,44 +34,23 @@
   width: 696px;
 }
 
-button {
-  border: none;
-}
-.hero-container > .button {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  transform: scale(0.9);
-  transition: transform $time $cubic;
-}
-.hero-container > .button:hover,
-.hero-container > .button:focus {
-  transform: scale(1);
-}
-.close-icon {
-  width: 18px;
-  height: 18px;
-  padding: 4px;
-}
-.button:hover,
-.button:focus,
-.button:active {
-  background: $accent-color;
-  color: $background-color;
-}
-.hero .button {
-  color: $background-color;
+.button {
+   color: $background-color;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  background: #2196f3;
+  background: $accent-color;
   padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  transform: scale(0.9);
+  transition: transform $time $cubic;
+  &:hover,
+  &:focus {
+    transform: scale(1);
+  }
 }
 
-.title {
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  text-align: center;
-}
+

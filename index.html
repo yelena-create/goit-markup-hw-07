@@ -59,34 +59,40 @@
     <!--Main container  -->
     <main>
       <!-- section hero -->
-      <section class="hero overlay">
-        <div class="hero-container">
-          <h1 class="title">
+      <section class="hero hero__overlay">
+        <div class="hero__container">
+          <h1 class="hero__title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button data-modal-open type="button" class="button">
+          <button data-modal-open type="button" class="button hero__button">
             Заказать услугу
           </button>
+
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <form class="form">
-                <p class="form-title">
+
+              <button class="modal__close" data-modal-close type="button-close">
+                &#10006;
+              </button>
+
+              <form class=" form modal__form">
+                <p class="form__title">
                   Оставьте свои данные, мы вам перезвоним
                 </p>
-                <div class="group">
-                  <label for="name" class="field">
+                <div class="form__group">
+                  <label for="name" class="form__field">
                     <input
-                      class="input"
+                      class="form__input"
                       type="text"
                       name="name"
                       id="name"
                       autocomplete="off"
                       autofocus
                     />
-                    <span class="label">Имя</span>
+                    <span class="form__label">Имя</span>
                     <svg
-                      class="icon"
+                      class="form__icon"
                       width="12"
                       height="12"
                       xmlns="http://www.w3.org/2000/svg"
@@ -96,16 +102,16 @@
                       />
                     </svg>
                   </label>
-                  <label class="field">
+                  <label class="form__field">
                     <input
-                      class="input"
+                      class="form__input"
                       type="tel"
                       name="tel"
                       autocomplete="off"
                     />
-                    <span class="label">Телефон</span>
+                    <span class="form__label">Телефон</span>
                     <svg
-                      class="icon"
+                      class="form__icon"
                       width="14"
                       height="14"
                       xmlns="http://www.w3.org/2000/svg"
@@ -115,16 +121,16 @@
                       />
                     </svg>
                   </label>
-                  <label class="field">
+                  <label class="form__field">
                     <input
-                      class="input"
+                      class="form__input"
                       type="email"
                       name="email"
                       autocomplete="off"
                     />
-                    <span class="label">Письмо</span>
+                    <span class="form__label">Письмо</span>
                     <svg
-                      class="icon"
+                      class="form__icon"
                       width="16"
                       height="12"
                       xmlns="http://www.w3.org/2000/svg"
@@ -135,40 +141,38 @@
                     </svg>
                   </label>
 
-                  <label class="field" for="comment">
+                  <label class="form__field" for="comment">
                     <textarea
-                      class="comment"
+                      class="form__comment"
                       name="comment"
                       id="comment"
                       cols="30"
                       rows="10"
                       placeholder="Введите текст"
                     ></textarea>
-                    <span class="label-comment">Комментарий</span>
+                    <span class="form__label-comment">Комментарий</span>
                   </label>
                 </div>
-                <div class="field-policy">
+                <div class="form__field-policy">
                   <label>
                     <input
-                      class="checkbox hidden"
+                      class="checkbox checkbox__hidden"
                       type="checkbox"
                       name="confidential"
                       value="policy"
                     />
                     <span class="icon-check"></span>
-                    <span class="label-policy">
+                    <span class="form__label-policy">
                       Соглашаюсь с рассылкой и принимаю
                       <a href="">Условия договора</a></span
                     >
                   </label>
                 </div>
-                <button class="submit" type="submit">
+                <button class="button button-submit" type="submit">
                   <span>Отправить</span>
                 </button>
               </form>
-              <button class="send" data-modal-close type="button-close">
-                &#10006;
-              </button>
+              
             </div>
           </div>
         </div>
