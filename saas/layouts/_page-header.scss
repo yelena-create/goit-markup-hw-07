@@ -21,7 +21,9 @@
 .logo__text-color {
   color: $accent-color;
   }
-
+.header__secondary-color{
+  color:$menu-color
+}
 
 .container__nav-link {
   display: flex;
@@ -63,7 +65,6 @@
 .contacts {
   display: flex;
   align-items: center;
-  margin-left: auto;
   &__link {
   margin: 0;
   border: 0;
@@ -72,6 +73,9 @@
   &:hover,
   &:focus{
   color: $accent-color;} 
+ }
+ &--header{
+   margin-left: auto;
  }
 }
 

@@ -20,7 +20,7 @@
         <div class="logo">
           <a href="./index.html" class="logo__text link">
             <span class="logo__text-color">Web</span>
-            <span>Studio</span></a
+            <span  class="header__secondary-color">Studio</span></a
           >
         </div>
         <nav class="container__nav-link">
@@ -315,56 +315,76 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="footer-contacts">
-          <a href="./index.html" class="logo-text link">
-            <span class="logo-text-color">Web</span>
-            <span>Studio</span></a
-          >
-          <address>г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="contacts">
-            <li class="mail">
-              <a href="mailto:info@example.com" class="link"
+      <div class="container footer__container">
+        <div class="footer__wrapper">
+        <div class="logo footer__logo">
+          <a href="./index.html" class="logo__text link">
+            <span class="logo__text-color">Web<span class="footer__secondary-color">Studio</span></span></a>
+        </div>
+        <div class=" contacts footer__contacts">
+          
+          <address class="adress--footer">г. Киев, пр-т Леси Украинки, 26</address>
+          <ul class="contacts--footer">
+            <li class="contacts__item--footer">
+              <a href="mailto:info@example.com" class="link--invers"
                 >info@example.com</a
               >
             </li>
-            <li>
-              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+            <li class="contacts__item--footer">
+              <a href="tel:+380991111111" class="link--invers">+38 099 111 11 11</a>
             </li>
           </ul>
         </div>
-        <div class="footer-social">
-          <h2 class="title">присоединяйтесь</h2>
-          <ul class="footer-social-item">
-            <li>
+        </div>
+        <div class="footer__social">
+          <h2 class="footer__social-title">присоединяйтесь</h2>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
               <a href="" class="button-social" width="44" height="44">
-                <svg class="button-icons" width="22" height="22">
+                <svg class="button-icons--footer" width="22" height="22">
                   <use href="./image/icons/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="footer__social-item">
               <a class="button-social" width="44" height="44" href="">
-                <svg class="button-icons" width="22" height="22">
+                <svg class="button-icons--footer" width="22" height="22">
                   <use href="./image/icons/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="footer__social-item">
               <a class="button-social" width="44" height="44" href="">
-                <svg class="button-icons" width="22" height="22">
+                <svg class="button-icons--footer" width="22" height="22">
                   <use href="./image/icons/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="footer__social-item">
               <a class="button-social" width="44" height="44" href="">
-                <svg class="button-icons" width="22" height="22">
+                <svg class="button-icons--footer" width="22" height="22">
                   <use href="./image/icons/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <form class="footer__form">
+            <label class="foooter__form-field">
+              <input
+                class="footer__form-input"
+                type="text"
+                name="email"
+                placeholder="email"
+              />
+            </label>
+
+            <span class="footer__form-label"> Подпишитесь на рассылку </span>
+            <button class=" button submit--footer" type="submit">
+              <span>Подписаться</span>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
