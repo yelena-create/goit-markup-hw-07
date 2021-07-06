@@ -2,25 +2,6 @@
 .invisible {
   display: none;
 }
-.pagenamelink {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.text {
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-  color: $main-text-color;
-}
-.title-name {
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  line-height: 1.188;
-}
 .portfolio-box {
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +9,7 @@
   margin-left: -30px;
   flex-basis: calc(100%/3 - 30px);
 }
-.card-list {
+.portfolio-box__card-list {
   border-bottom: 1px solid $secondary-color;
   box-sizing: border-box;
   text-align: left;
@@ -38,27 +19,29 @@
   border-left: 1px solid $secondary-color;
   border-right: 1px solid $secondary-color;
   border-bottom: 1px solid $secondary-color;
-}
-.card-list:hover,
-.card-list:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow $time $cubic;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &:hover .portfolio-box__card-overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    & .portfolio-box__card-item {
+      display: block;
+    }
 }
 
-.card-list:hover .card-overlay {
-  opacity: 1;
-  transform: translateY(0);
-}
-.card-list a {
+.portfolio-box__card-heading {
   display: block;
+  width: 370px;
 }
-.card-list {
-  transition: box-shadow $time $cubic;
-}
-.overlay-box {
+.portfolio-box__overlay-box {
   position: relative;
   overflow: hidden;
 }
-.card-overlay {
+.portfolio-box__card-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -71,18 +54,36 @@
   transform: translateY(+100%);
   transition: opacity $cubic, transform $time $cubic;
 }
-.overlay-text {
+.portfolio-box__overlay-text {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: $background-color;
 }
-.card-heading {
-  display: block;
-  width: 370px;
-}
-.card-text {
+.portfolio-box__card-text {
   display: block;
   padding: 20px 24px;
   justify-content: center;
 }
+.portfolio-box__pagenamelink {
+  color: $menu-color;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-box__text {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
+
+
+
+// .title-name {
+//   font-size: 16px;
+//   font-weight: 500;
+//   letter-spacing: 0.03em;
+//   line-height: 1.188;
+// }
