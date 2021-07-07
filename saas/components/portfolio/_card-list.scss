@@ -30,6 +30,7 @@
     }
     & .portfolio-box__card-item {
       display: block;
+      text-decoration: none;
     }
 }
 
@@ -73,6 +74,7 @@
   letter-spacing: 0.06em;
 }
 .portfolio-box__text {
+
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;

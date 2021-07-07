@@ -1,6 +1,8 @@
+.header{
 
-.container__header {
   border-bottom: 1px solid #ececec;
+}
+.container__header {
   height: 80px;
   padding: 0 15px;
   display: flex;
@@ -68,7 +70,6 @@
   &__link {
   margin: 0;
   border: 0;
-  color: $main-text-color;
   align-items: flex-end;
   &:hover,
   &:focus{
@@ -78,7 +79,9 @@
    margin-left: auto;
  }
 }
-
+.link-contact{
+  color: $main-text-color;
+}
 .contacts__link-phone {
   margin-left: 50px;
 }
