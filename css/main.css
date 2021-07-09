@@ -892,9 +892,61 @@ img {
 .footer__container {
   margin: 0 auto;
   padding: 60px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+@media screen and (min-width: 480px) {
+  .footer__container {
+    max-width: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    max-width: 768px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    max-width: 1200px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.footer__container .footer__wrapper {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container .footer__wrapper {
+    margin-bottom: 0;
+  }
 }
 
 .footer__secondary-color {
@@ -911,7 +963,18 @@ img {
 }
 
 .footer__logo {
+  width: 154px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    width: 100%;
+  }
 }
 
 .adress--footer,
@@ -932,14 +995,38 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts--footer,
+  .footer__contacts {
+    max-width: 1200px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .footer__social {
   margin-left: 70px;
   margin-right: 90px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social {
+    margin-left: 165px;
+    margin-right: 0;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    margin-bottom: 0;
+    margin-left: 70px;
+    margin-right: 90px;
+  }
 }
 
 .footer__form-label,
@@ -999,11 +1086,22 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   padding-top: 36px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+  }
 }
 
 .submit--footer {
@@ -1011,9 +1109,9 @@ img {
   padding: 10px 30px;
   width: 200px;
   text-align: left;
-  margin-left: 12px;
   -webkit-transform: scale(1);
           transform: scale(1);
+  margin: 0 auto;
 }
 
 .submit--footer::before {
@@ -1027,13 +1125,25 @@ img {
   background-image: url(../image/icons/icon-send.svg);
 }
 
+@media screen and (min-width: 1200px) {
+  .submit--footer {
+    margin-left: 12px;
+  }
+}
+
 .footer__form-label {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20%;
   color: #ffffff;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__form-label {
+    left: 0;
+  }
 }
 
 .footer__form-input {
@@ -1047,6 +1157,13 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: #ffffff;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__form-input {
+    margin-bottom: 0;
+  }
 }
 
 .section__portfolio {
