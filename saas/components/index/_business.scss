@@ -1,3 +1,12 @@
+.business{
+  display: none;
+      @media screen and (min-width: 1200px){
+    max-width: 1200px;
+    display: table;
+    padding-top: 0;
+  }
+
+}
 
 .business__image-list {
   display: flex;

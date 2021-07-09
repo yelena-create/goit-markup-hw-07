@@ -1,40 +1,82 @@
-.hero {
+.hero__overlay {
+  padding: 0;
+  margin: 0;
   display: block;
   background-color: rgba(47, 48, 58, 0.4);
   color: $background-color;
-  text-align: center;
-  padding: 0 15px 0;
-}
-.hero__overlay {
-  height: 600px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../image/index/hero-dg.jpg);
-}
+    url(../image/index/hero-dg.jpg);   
+  max-width: 1600px;
+  max-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media screen and (min-width: 768px){
+  }
+  
+  @media screen and (min-width: 1200px){
+    max-height: 600px;
+           }  
+    }
 
 .hero__container {
-  display: inline-block;
-  padding: 200px 0 200px;
-}
+
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 1600px;
+
+    @media screen and (min-width: 768px){
+
+  }
+  
+  @media screen and (min-width: 1200px){
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+           }
+
+  }
+
+  
+
 
 .hero__title {
+    font-weight: 900;
+font-size: 26px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+height: 120px;
+margin: 0 auto;
+margin-bottom: 30px;
+  @media screen and (min-width: 768px){
+      width: 360px;
+
+  }
+  
+  @media screen and (min-width: 1200px){
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
-  height: 120px;
-  margin-bottom: 30px;
-  width: 696px;
+
+  }
+
+
 }
 
 .button {
+  height: 50px;
    color: $background-color;
   font-weight: bold;
   font-size: 16px;
