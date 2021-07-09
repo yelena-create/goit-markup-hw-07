@@ -96,9 +96,15 @@ margin-bottom: 100px;
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: left;
+}
+.footer__social-title{
+ text-align: center;
+      @media screen and (min-width: 1200px){
+  text-align: left;
+    
+  }
 
 }
-
 .footer__social-list{
   display: flex;
   flex-direction: row;

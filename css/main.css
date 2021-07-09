@@ -1040,6 +1040,16 @@ img {
   text-align: left;
 }
 
+.footer__social-title {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__social-title {
+    text-align: left;
+  }
+}
+
 .footer__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
